@@ -18,18 +18,19 @@ Single page with anchor sections (linkable, e.g. `…/#how-to-apply`):
 | `#sponsors` | Sponsor logos |
 | `#contact` | Contact details |
 
-## Remote assets (consider self-hosting before/after launch)
+## Images (`images/`)
 
-- **AGILE logo** in navbar + sponsors: hotlinked from `agile-gi.eu` (the 2024 site does the same).
-- **Hero photo**: Gilbert Scott Building by Diliff, [Wikimedia Commons, CC BY 3.0](https://commons.wikimedia.org/wiki/File:University_of_Glasgow_Gilbert_Scott_Building_-_Feb_2008.jpg), hotlinked via Special:FilePath. Attribution is in the figure caption — keep it if you replace the URL with a local copy in `images/`.
-- UofG / UBDC appear as text links in Sponsors — replace with official logo files when available (drop into `images/` and swap the `.sponsor-text` links for `<img>`).
+- `agile_logo.svg` — from [agile-gi.eu](https://agile-gi.eu/) (navbar + sponsors).
+- `ubdc_logo.svg` — from [ubdc.ac.uk](https://www.ubdc.ac.uk/) (sponsors).
+- `glasgow-gilbert-scott.jpg` — Gilbert Scott Building by Diliff, [Wikimedia Commons, CC BY 3.0](https://commons.wikimedia.org/wiki/File:University_of_Glasgow_Gilbert_Scott_Building_-_Feb_2008.jpg), resized to 1600 px. Attribution lives in the figure caption — keep it. Swap for a cohort photo after the school.
 
-## Things to confirm before publishing
+Urban Studies & Social Policy has no standalone logo, so it appears as a styled text link in Sponsors.
 
-- **Application deadline** (currently *Fri 14 Aug 2026, 23:59 BST*) and **notification date** (*by Fri 21 Aug 2026*) — appear in the callout box and in `#how-to-apply`.
-- **Application e-mail** — currently `qunshan.zhao@glasgow.ac.uk` (in `#how-to-apply` and `#contact`).
-- Exact meeting room (page currently says "confirmed to accepted participants").
-- Staff titles (e.g. Dr vs Prof Mingshu Wang) in `#organising-committee`.
+## Key facts on the page
+
+- Applications close **Fri 14 Aug 2026, 17:00 BST**; decisions by **Fri 21 Aug 2026**; applications by email to `qunshan.zhao@glasgow.ac.uk` (single PDF: max-300-word abstract + 150-word motivation + 2-page CV).
+- Cohort size 20–25. No registration fee; social dinner (Òran Mór) subsidised; partial travel grants ~€350 (Europe) + UK budget.
+- Still to fill in later: exact meeting room; staff titles worth re-checking (e.g. Dr vs Prof Mingshu Wang).
 
 ## Deployment
 
