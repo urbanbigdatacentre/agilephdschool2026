@@ -29,7 +29,7 @@ Urban Studies & Social Policy has no standalone logo, so it appears as a styled 
 ## Key facts on the page
 
 - Applications close **Fri 14 Aug 2026, 17:00 BST**; decisions by **Fri 21 Aug 2026**; applications by email to `qunshan.zhao@glasgow.ac.uk` (single PDF: max-300-word abstract + 150-word motivation + 2-page CV).
-- Cohort size 20–25. No registration fee; social dinner (Òran Mór) subsidised; partial travel grants ~€350 (Europe) + UK budget.
+- Cohort size 20–25. No registration fee; social dinner (Òran Mór) subsidised; partial travel grants (Europe) + UK budget — no amounts stated publicly.
 - Still to fill in later: exact meeting room; staff titles worth re-checking (e.g. Dr vs Prof Mingshu Wang).
 
 ## Deployment
