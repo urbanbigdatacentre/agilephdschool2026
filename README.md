@@ -30,7 +30,7 @@ Urban Studies & Social Policy has no standalone logo, so it appears as a styled 
 
 - Applications close **Fri 14 Aug 2026, 17:00 BST**; decisions by **Fri 21 Aug 2026**; applications by email to `Pengyuan.Liu@glasgow.ac.uk` (single PDF: max-300-word abstract + 150-word motivation + 2-page CV). General questions: `qunshan.zhao@glasgow.ac.uk` (Contact section).
 - Cohort size 20–25. No registration fee; social dinner (Òran Mór) subsidised; partial travel grants (Europe) + UK budget — no amounts stated publicly.
-- Still to fill in later: exact meeting room; staff titles worth re-checking (e.g. Dr vs Prof Mingshu Wang).
+- Venue room: Room 587, Adam Smith Building. Still worth re-checking: staff titles (e.g. Dr vs Prof Mingshu Wang).
 
 ## Deployment
 
