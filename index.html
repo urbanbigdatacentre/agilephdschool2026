@@ -4,13 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AGILE PhD School 2026</title>
-  <meta name="description" content="8th AGILE PhD School — Urban Analytics in the AI Era: From Smart Data to Participatory Action. 8–10 September 2026, University of Glasgow, UK. No registration fee; travel support available. Apply by 14 August 2026." />
+  <meta name="description" content="8th AGILE PhD School — Urban Analytics in the AI Era: From Smart Data to Participatory Action. 8–10 September 2026, University of Glasgow, UK. The call has closed — around 25 PhD students from across Europe will take part." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>" />
   <meta property="og:title" content="AGILE PhD School 2026" />
-  <meta property="og:description" content="Urban Analytics in the AI Era: From Smart Data to Participatory Action. 8–10 September 2026, University of Glasgow. Applications close 14 August 2026." />
+  <meta property="og:description" content="Urban Analytics in the AI Era: From Smart Data to Participatory Action. 8–10 September 2026, University of Glasgow. Around 25 PhD students from across Europe will take part." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://urbanbigdatacentre.github.io/agilephdschool2026/" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 <body>
 
@@ -50,6 +51,7 @@
       <li><a href="#why-to-participate">Why participate?</a></li>
       <li><a href="#venue">Where will it take place?</a></li>
       <li><a href="#programme">Programme</a></li>
+      <li><a href="#selected-candidates">Selected Candidates</a></li>
       <li><a href="#how-to-apply">How to apply</a></li>
       <li><a href="#organising-committee">Organising Committee</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
@@ -63,8 +65,9 @@
   </figure>
 
   <div class="callout">
-    <strong>Applications are open.</strong> The call closes on <strong>Friday 14 August 2026 (17:00 BST)</strong>.
-    Participation is free of charge and travel support is available — see <a href="#how-to-apply">How to apply</a>.
+    <strong>Applications are now closed.</strong> The call closed on 14 August 2026 and the selected
+    participants have been notified — around 25 PhD students will join us from across Europe
+    (see <a href="#selected-candidates">Selected Candidates</a>). Thank you to everyone who applied!
   </div>
 
   <h2 id="why-to-participate">Why participate?</h2>
@@ -171,7 +174,22 @@
     <tr><td>13:30–</td><td class="break">Lunch and departure</td></tr>
   </table>
 
+  <h2 id="selected-candidates">Selected Candidates</h2>
+  <p>
+    The call for applications is closed and the selection is complete: <strong>around 25 PhD students</strong>
+    will join us in Glasgow, travelling from ten institutions across four countries.
+  </p>
+  <div id="cohort-map" aria-label="Map of the cities the 2026 cohort travels from"></div>
+  <p class="note">
+    Participants travel from: Bristol · Espoo (Aalto University) · Glasgow (host) · Karlsruhe (KIT) ·
+    Leeds · London (UCL) · Münster · Salzburg · St Andrews · Vienna.
+  </p>
+
   <h2 id="how-to-apply">How to apply</h2>
+  <p class="note">
+    The call for applications closed on 14 August 2026 and the participants have been selected.
+    The information below is kept for reference.
+  </p>
   <p>
     The school is open to <strong>PhD students at any stage</strong> who are affiliated with a current
     <a href="https://agile-gi.eu/community/members">AGILE member institution</a>. We aim for a balanced
@@ -271,6 +289,40 @@
   </div>
 
 </main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  if (window.L && document.getElementById('cohort-map')) {
+    var map = L.map('cohort-map', { scrollWheelZoom: false });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    var cities = [
+      ['Glasgow — host', 55.8642, -4.2518, true],
+      ['St Andrews', 56.3398, -2.7967],
+      ['Leeds', 53.8008, -1.5491],
+      ['Bristol', 51.4545, -2.5879],
+      ['London (UCL)', 51.5246, -0.134],
+      ['Münster', 51.9607, 7.6261],
+      ['Karlsruhe (KIT)', 49.0093, 8.4044],
+      ['Salzburg', 47.8095, 13.055],
+      ['Vienna', 48.2082, 16.3738],
+      ['Espoo (Aalto University)', 60.1841, 24.8271]
+    ];
+    var bounds = [];
+    cities.forEach(function (c) {
+      L.circleMarker([c[1], c[2]], {
+        radius: c[3] ? 10 : 7,
+        color: '#1277a7',
+        weight: 2,
+        fillColor: '#1277a7',
+        fillOpacity: c[3] ? 0.95 : 0.45
+      }).addTo(map).bindPopup('<strong>' + c[0] + '</strong>');
+      bounds.push([c[1], c[2]]);
+    });
+    map.fitBounds(bounds, { padding: [30, 30] });
+  }
+</script>
 
 <footer class="site-footer">
   <p>AGILE PhD School 2026 · Urban Big Data Centre, University of Glasgow · Co-funded by <a href="https://agile-gi.eu/">AGILE</a></p>

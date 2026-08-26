@@ -135,6 +135,14 @@ p, ul, ol { margin: 0 0 1em; }
 .schedule .break { color: var(--muted-color); font-style: italic; }
 .who { color: var(--muted-color); font-size: 0.93em; }
 
+/* ===== Cohort map ======================================================== */
+#cohort-map {
+  height: 420px; margin: 1.2rem 0;
+  border: 1px solid var(--rule-color); border-radius: 4px;
+  background: var(--paper-alt, #f4f7fa);
+}
+.leaflet-container { font-family: var(--sans); }
+
 /* ===== People, sponsors, appendix, footer ================================ */
 .people { columns: 2; column-gap: 2.5rem; }
 .people li { break-inside: avoid; margin: 0.2rem 0; }
